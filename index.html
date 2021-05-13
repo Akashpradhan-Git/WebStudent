@@ -13,6 +13,8 @@
     rel="stylesheet" />
   <script defer src="https://kit.fontawesome.com/a4eb31c874.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
   <!-- -----end------------- -->
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="/scss/style.css" />
@@ -27,8 +29,8 @@
     <ul class="nav__list">
       <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
       <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
-      <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-      <li class="nav__item"><a href="#" class="nav__link">Services</a></li>
+      <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+      <li class="nav__item"><a href="#service" class="nav__link">Services</a></li>
       <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
       <li class="nav__item nav__item--btn">
         <a href="#" class="nav__link">Login</a>
@@ -40,11 +42,51 @@
     </div>
   </nav>
 
-  <!-- TODO: We should remove this code in the project -->
-  <!-- Demo space -->
-  <div style="height: 50rem"></div>
-  <!-- Demo space -->
+  <!-- home & about section -->
 
+
+  <!-- The Home Section -->
+  <section class="home">
+    <div class="wrapper">
+      <div class="content">
+        <div class="title">WEB DESIGNER</div>
+        <div class="sub-title">Grow Your Brand Through</div>
+        <div class="sub-title"> The Art Of Design</div>
+        <div class="btnwrapper">
+          <a class="homebutton" href="#about">
+            <button class="btn">About Us</button>
+          </a>
+          <a class="btncontact">
+            <button class="btn">Contact Us</button>
+          </a>
+        </div>
+      </div>
+      <div class="image">
+        <img class="aboutimg" src="/images/coding.svg">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- About Section -->
+  <div class="about" id="about">
+    <div class="row aboutpage" id="aboutus">
+      <div class="col-md-3"></div>
+      <div class="col-md-5">
+        <div class="parallelogram">
+          <h1 class="about-head ">About US<span>.</span></h1>
+          <p class="content">
+            Web_Student Provides various products. We seize your ideas and make use of them nearly so that will give you
+            a
+            first-rate searching net web page that is 100% practical And customized in keeping with your desires. The
+            present-day technologies and apps are fused flawlessly in the web portal that can be used efficaciously to
+            carve a niche on your business at the same time as catering to your clients globally persuasively.
+          </p>
+        </div>
+      </div>
+      <div class="col"></div>
+    </div>
+  </div>
 
   <!-- -----------------------service section--------------------- -->
 
@@ -56,7 +98,7 @@
         <li class="scard-item">
           <div class="scontent">
             <div class="image">
-              <img src="/images/service/1.gif" alt="">
+              <img src="/images/coding.svg" alt="">
             </div>
             <div class="text">
               <p>Website Development</p>
@@ -67,7 +109,7 @@
         <li class="scard-item">
           <div class="scontent">
             <div class="image">
-              <img src="/images/service/2.gif" alt="">
+              <img src="/images/service/2.svg" alt="">
             </div>
             <div class="text">
               <p>Graphic & logo Design</p>
@@ -79,7 +121,7 @@
         <li class="scard-item">
           <div class="scontent">
             <div class="image">
-              <img src="/images/service/3.gif" alt="">
+              <img src="/images/service/3.svg" alt="">
             </div>
             <div class="text">
               <p>E-Commerce Website</p>
@@ -90,7 +132,7 @@
         <li class="scard-item">
           <div class="scontent">
             <div class="image">
-              <img src="/images/service/4.gif" alt="">
+              <img src="/images/service/4.svg" alt="">
             </div>
             <div class="text">
               <p>Small Business Website</p>
@@ -101,21 +143,10 @@
         <li class="scard-item">
           <div class="scontent">
             <div class="image">
-              <img src="/images/service/5.gif" alt="">
+              <img src="/images/service/5.svg" alt="">
             </div>
             <div class="text">
               <p>Poster's Design</p>
-            </div>
-          </div>
-        </li>
-        <li class="scard-item">
-          <div class="scontent">
-            <div class="image">
-              <img src="/images/service/1.gif" alt="">
-            </div>
-            <div class="text">
-              <p>Web developer</p>
-
             </div>
           </div>
         </li>

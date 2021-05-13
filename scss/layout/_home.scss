@@ -1,0 +1,116 @@
+
+.home{
+   height: 70vh;
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+        margin: 5rem 9rem;
+        .content{
+            margin-top: 2em;
+            .title{
+                font-family: 'Libre Baskerville', serif;
+                font-size: calc(15px + 2.8vw);
+                font-style: normal;
+                font-weight: 400;
+                line-height: 86px;
+                letter-spacing: 0em;
+            }
+            .sub-title{
+               font-family: 'Poppins', sans-serif; 
+               font-size: 2.2rem;
+            }
+
+            .btnwrapper{
+                font-family: 'Poppins', sans-serif; 
+                margin-top: 1.5rem;
+                a{
+                    text-decoration: none;
+                }
+                .btn{
+                    padding: 1rem 2rem;
+                    border: none;
+                    border-radius: 5px;
+                    font-size: 1.9rem;
+                    letter-spacing: 1px;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                }
+                .homebutton{
+                    .btn{
+                        background-color: $color-primary;
+                        color: black;
+                        
+                        &:hover{
+                            background: $color-primary-dark;
+                            transform: scale(1.05);
+                        }
+                    }
+                }
+                .btncontact{
+                    margin-left: 2rem;
+                    .btn{
+                        background-color: $color-grey-dark-2;
+                        color: #fff;
+
+                        &:hover{
+                            background: $color-grey-dark-3;
+                            transform: scale(1.05);
+                        }
+                    }
+                }
+            }
+        }
+
+        .image{
+            margin-right: 4em;
+            img{
+                width: 390px;
+            }
+        }
+
+    }
+
+@media (max-width:950px) {
+  .wrapper{
+    .image{
+        margin-right: 1em;
+        img{
+            width: 350px;
+        }
+    }
+  }
+}
+
+@media (max-width:800px) {
+    .wrapper{
+        margin: 0rem 5rem;
+        .image{
+            margin-right: 1em;
+            img{
+                width: 300px;
+            }
+        }
+      }
+}
+    @media (max-width:620px) {
+            .wrapper{
+                display: flex;
+                flex-direction: column;
+            }
+            .title{
+                font-size: 4em;
+            }
+            .image{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 5em;
+                img{
+                    width: 300px;
+                }
+            }
+        
+    }
+ 
+}
+
