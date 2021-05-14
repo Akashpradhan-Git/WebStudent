@@ -1,68 +1,61 @@
 .about {
-  height: 70vh;
+  height: 90vh;
   background-image: linear-gradient(
-      rgba(85, 239, 196, 0.8),
-      rgba(19, 195, 145, 0.8)
+      to right bottom,
+      rgba($color-primary, 0.9),
+      rgba($color-primary-dark, 0.9)
     ),
     url(/images/about.jpg);
-  font-family: "Poppins", sans-serif;
-  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: $font-sans;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  .aboutpage {
+  .box {
     width: 60%;
-    height: auto;
     background-color: $color-white;
-    margin: 1rem;
-    transform: skew(-15deg);
-  }
-  .parallelogram {
-    transform: skew(15deg);
-    h1 {
-      text-align: center;
-      padding: 3rem 0 0rem 0;
 
-      span {
-        color: $color-primary;
-      }
+    transform: skewX(-15deg);
+
+    & > * {
+      transform: skewX(15deg);
     }
 
-    p {
-      padding: 4rem 5rem;
-      text-align: justify;
-      text-justify: inter-word;
-    }
-  }
-
-  @media (max-width: 900px) {
-    .aboutpage {
+    @include respond(phone) {
       width: 90%;
-      height: auto;
-      transform: skew(0deg);
+      transform: skewX(0deg);
+
+      & > * {
+        transform: skewX(0deg);
+      }
     }
-    .parallelogram {
-      transform: skew(0deg);
-      h1 {
-        text-align: center;
-        padding: 1rem 0 0rem 0;
+
+    & div {
+      padding: 8rem 4rem;
+
+      @include respond(tab-port) {
+        padding: 6rem 3rem;
+      }
+      @include respond(phone) {
+        padding: 4rem 1rem;
       }
     }
   }
-  @media (max-width: 620px) {
-    margin-top: 10vh;
-    .aboutpage {
-      width: 90%;
-      height: auto;
-      transform: skew(0deg);
+  &__heading {
+    font-size: 6rem;
+    text-align: center;
+    margin-bottom: 6rem;
+
+    @include respond(tab-port) {
+      margin-bottom: 4rem;
+      font-size: 5rem;
     }
-    .parallelogram {
-      transform: skew(0deg);
-      h1 {
-        text-align: center;
-        padding: 1rem 0 0rem 0;
-      }
-    }
+  }
+  &__content {
+    font-family: $font-serif;
+    text-align: center;
+    margin: 0 6rem;
+    line-height: 1.7;
   }
 }

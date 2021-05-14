@@ -5,6 +5,9 @@
 [1200 - 1800]  is where normal styles will apply
 1800 +         Big Screens
 */
+.u-marker {
+  color: #55efc4; }
+
 * {
   margin: 0;
   padding: 0;
@@ -627,7 +630,19 @@ img {
   - tab-land
   - big-desktop
 
+  */
+  /** 
+
+  $breakpoints possible values:
+  - phone
+  - tab-port
+  - tab-land
+  - big-desktop
+
   */ }
+  @media (max-width: 600px) {
+    .home {
+      height: auto; } }
   .home .content {
     flex: 1 1; }
     .home .content .title {
@@ -686,52 +701,82 @@ img {
         width: 100%; } }
 
 .about {
-  height: 70vh;
-  background-image: linear-gradient(rgba(85, 239, 196, 0.8), rgba(19, 195, 145, 0.8)), url(/images/about.jpg);
+  height: 90vh;
+  background-image: linear-gradient(to right bottom, rgba(85, 239, 196, 0.9), rgba(19, 195, 145, 0.9)), url(/images/about.jpg);
+  background-size: cover;
   font-family: "Poppins", sans-serif;
-  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center; }
-  .about .aboutpage {
+  .about .box {
     width: 60%;
-    height: auto;
     background-color: #fff;
-    margin: 1rem;
-    transform: skew(-15deg); }
-  .about .parallelogram {
-    transform: skew(15deg); }
-    .about .parallelogram h1 {
-      text-align: center;
-      padding: 3rem 0 0rem 0; }
-      .about .parallelogram h1 span {
-        color: #55efc4; }
-    .about .parallelogram p {
-      padding: 4rem 5rem;
-      text-align: justify;
-      text-justify: inter-word; }
-  @media (max-width: 900px) {
-    .about .aboutpage {
-      width: 90%;
-      height: auto;
-      transform: skew(0deg); }
-    .about .parallelogram {
-      transform: skew(0deg); }
-      .about .parallelogram h1 {
-        text-align: center;
-        padding: 1rem 0 0rem 0; } }
-  @media (max-width: 620px) {
-    .about {
-      margin-top: 10vh; }
-      .about .aboutpage {
+    transform: skewX(-15deg);
+    /** 
+
+  $breakpoints possible values:
+  - phone
+  - tab-port
+  - tab-land
+  - big-desktop
+
+  */ }
+    .about .box > * {
+      transform: skewX(15deg); }
+    @media (max-width: 600px) {
+      .about .box {
         width: 90%;
-        height: auto;
-        transform: skew(0deg); }
-      .about .parallelogram {
-        transform: skew(0deg); }
-        .about .parallelogram h1 {
-          text-align: center;
-          padding: 1rem 0 0rem 0; } }
+        transform: skewX(0deg); }
+        .about .box > * {
+          transform: skewX(0deg); } }
+    .about .box div {
+      padding: 8rem 4rem;
+      /** 
+
+  $breakpoints possible values:
+  - phone
+  - tab-port
+  - tab-land
+  - big-desktop
+
+  */
+      /** 
+
+  $breakpoints possible values:
+  - phone
+  - tab-port
+  - tab-land
+  - big-desktop
+
+  */ }
+      @media (max-width: 900px) {
+        .about .box div {
+          padding: 6rem 3rem; } }
+      @media (max-width: 600px) {
+        .about .box div {
+          padding: 4rem 1rem; } }
+  .about__heading {
+    font-size: 6rem;
+    text-align: center;
+    margin-bottom: 6rem;
+    /** 
+
+  $breakpoints possible values:
+  - phone
+  - tab-port
+  - tab-land
+  - big-desktop
+
+  */ }
+    @media (max-width: 900px) {
+      .about__heading {
+        margin-bottom: 4rem;
+        font-size: 5rem; } }
+  .about__content {
+    font-family: "Roboto Slab", serif;
+    text-align: center;
+    margin: 0 6rem;
+    line-height: 1.7; }
 
 .contact {
   height: 70vh;
