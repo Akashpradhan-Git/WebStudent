@@ -158,7 +158,7 @@
     <!-- --------------------------clint section---------------------- -->
 
     <section class="client">
-      <h1>What Our Clints Says<span>?</span></h1>
+      <h2>What Our Clints Says<span class="u-marker">?</span></h2>
       <div class="review mySwiper">
         <ul class="cards swiper-wrapper">
           <li class="card-item swiper-slide">
@@ -219,6 +219,8 @@
           </li>
         </ul>
         <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
     </section>
 
@@ -330,21 +332,5 @@
 
     <!-- swiper-bundle -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: "auto",
-        centeredSlides: true,
-        spaceBetween: 30,
-        loop: true,
-        autoplay: {
-          delay: 2500,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-    </script>
   </body>
 </html>
