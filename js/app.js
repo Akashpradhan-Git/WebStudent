@@ -27,3 +27,22 @@ navItems.forEach((item) => item.addEventListener("click", toggleMenu));
 ///////////////////////////////////////////
 // Navigation End
 ///////////////////////////////////////////
+const runSwiper = function () {
+  const swiper = new Swiper(".mySwiper", {
+    slidesPerView: "auto",
+    centeredSlides: true,
+    spaceBetween: 100,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+};
+runSwiper();
